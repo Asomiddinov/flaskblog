@@ -1,0 +1,25 @@
+{% extends 'index.html' %}
+{% block content %}
+<h3 class="text-center" style="color:rgb(6, 112, 68)">
+    Fill with necessary data:
+</h3>
+<form action="" method="post">
+    <div class="form-control container">
+        <label for="email"><b>Email</b></label>
+        <input type="email" class="form-control" id="email" name="email" placeholder="email">
+        <br>
+        <label for="password"><b>Password</b></label>
+        <input type="password" class="form-control" id="password" name="password" placeholder="Password">
+        <br>
+        <div class="text-center">
+            <button type="submit" class="btn btn-success"><b></b></button>
+        </div>
+    </div>
+</form>
+<style>
+    h3 {
+        color: rgb(32, 13, 13);
+    }
+</style>
+<!-- style="color:rgb(6, 112, 68)" -->
+{% endblock %}

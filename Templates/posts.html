@@ -1,0 +1,108 @@
+{% extends 'index.html' %}
+{% block content %}
+<h1 class="text-center">😷✍🏻</h1><br>
+<form action="/posts" method="post" class="text-center">
+    <label for="patient"><b>Доставщик:</b></label>
+    <input type="text" id="" name="patient" class="form-control-sm" required><br><br>
+    <!--  -->
+    <label for="pat_code"><b>Код:</b></label><br>
+    <input type="text" id="" name="pat_code" class="form-control-lg" required>
+    <!--  -->
+    <label for="pat_code1"><b></b></label>
+    <input type="text" id="" name="pat_code1" class="form-control-lg">
+    <!--  -->
+    <label for="pat_code2"><b></b></label>
+    <input type="text" id="" name="pat_code2" class="form-control-lg">
+    <!--  -->
+    <label for="pat_code3"><b></b></label>
+    <input type="text" id="" name="pat_code3" class="form-control-lg">
+    <!--  -->
+    <label for="pat_code4"><b></b></label>
+    <input type="text" id="" name="pat_code4" class="form-control-lg">
+    <!--  -->
+    <label for="pat_code5"><b></b></label>
+    <input type="text" id="" name="pat_code5" class="form-control-lg">
+    <!--  -->
+    <label for="pat_code6"><b></b></label>
+    <input type="text" id="" name="pat_code6" class="form-control-lg">
+    <!--  -->
+    <label for="pat_code7"><b></b></label>
+    <input type="text" id="" name="pat_code7" class="form-control-lg"><br><br>
+    <!--  -->
+    <label for="pat_code8"><b></b></label>
+    <input type="text" id="" name="pat_code8" class="form-control-lg">
+    <!--  -->
+    <label for="pat_code9"><b></b></label>
+    <input type="text" id="" name="pat_code9" class="form-control-lg">
+    <!--  -->
+    <label for="pat_code10"><b></b></label>
+    <input type="text" id="" name="pat_code10" class="form-control-lg">
+    <!--  -->
+    <label for="pat_code11"><b></b></label>
+    <input type="text" id="" name="pat_code11" class="form-control-lg">
+    <!--  -->
+    <label for="pat_code12"><b></b></label>
+    <input type="text" id="" name="pat_code12" class="form-control-lg">
+    <!--  -->
+    <label for="pat_code13"><b></b></label>
+    <input type="text" id="" name="pat_code13" class="form-control-lg">
+    <!--  -->
+    <label for="pat_code14"><b></b></label>
+    <input type="text" id="" name="pat_code14" class="form-control-lg">
+    <!--  -->
+    <label for="pat_code15"><b></b></label>
+    <input type="text" id="" name="pat_code15" class="form-control-lg"><br><br>
+    <!--  -->
+    <input type="submit" value="Submit" class="btn btn-success">
+</form><br>
+<table class="table table-danger table-responsive-sm">
+    {% for i in posts %}
+    <thead class="table-active">
+        <tr>
+            <th scope="col">#</th>
+            <th scope="col">Доставщик</th>
+            <th scope="col">Код</th>
+            <th scope="col"></th>
+            <th scope="col"></th>
+            <th scope="col"></th>
+            <th scope="col"></th>
+            <th scope="col"></th>
+            <th scope="col"></th>
+            <th scope="col"></th>
+            <th scope="col"></th>
+            <th scope="col"></th>
+            <th scope="col"></th>
+            <th scope="col"></th>
+            <th scope="col"></th>
+            <th scope="col"></th>
+            <th scope="col"></th>
+            <th scope="col"></th>
+            <th scope="col">Дата и время</th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr>
+            <th scope="row">{{ i.id }}</th>
+            <td>{{ i.patient }}</td>
+            <td>{{ i.pat_code }}</td>
+            <td>{{ i.pat_code1 }}</td>
+            <td>{{ i.pat_code2 }}</td>
+            <td>{{ i.pat_code3 }}</td>
+            <td>{{ i.pat_code4 }}</td>
+            <td>{{ i.pat_code5 }}</td>
+            <td>{{ i.pat_code6 }}</td>
+            <td>{{ i.pat_code7 }}</td>
+            <td>{{ i.pat_code8 }}</td>
+            <td>{{ i.pat_code9 }}</td>
+            <td>{{ i.pat_code10 }}</td>
+            <td>{{ i.pat_code11 }}</td>
+            <td>{{ i.pat_code12 }}</td>
+            <td>{{ i.pat_code13 }}</td>
+            <td>{{ i.pat_code14 }}</td>
+            <td>{{ i.pat_code15 }}</td>
+            <td>{{ i.date }}</td>
+        </tr>
+    </tbody>
+    {% endfor %}
+</table>
+{% endblock %}

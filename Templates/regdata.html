@@ -1,0 +1,15 @@
+{% extends 'index.html' %}
+{% block content %}
+{{ form.csrf_token() }}
+<h1 class="text-center">Take your holiday here:</h1>
+<br><br />
+<div class="row container text-center text-capitalize">
+    {% for c in client %}
+    <div class="card" style="width: 20rem; height: 12rem;">
+        <h5 class="card-title">{{ c.fullname }}</h5>
+        <p class="card-text">{{ c.email }}</p><br><br>
+        <a href="#" class="btn btn-outline-success">↗</a>
+    </div>
+    {% endfor %}
+</div>
+{% endblock %}
